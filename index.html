@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets\style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='9'>9AM</div>
+      <input id="9AM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='10'>10AM</div>
+      <input id="10AM" class="user-input col-md-10">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='11'>11AM</div>
+      <input id="11AM" class="user-input col-md-10">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='12'>12PM</div>
+      <input id="12PM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i id="button" class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='13'>1PM</div>
+      <input id="1PM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='14'>2PM</div>
+      <input id="2PM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='15'>3PM</div>
+      <input id="3PM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='16'>4PM</div>
+      <input id="4PM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1 hour pt-4" id='17'>5PM</div>
+      <input id="5PM" class="user-input col-md-10" type="text">
+      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+<script src="assets\script.js"></script>
+
 </html>
