@@ -23,4 +23,4 @@ Persist events between refreshes of a page.
 
 The following animation demonstrates the application functionality:
 
-Link to the Code Quiz Website - https://sabrinahuajy.github.io/SabrinaHuajy-CodeQuiz/
+Link to the Daily-Planner-App - https://sabrinahuajy.github.io/SabrinaHuajy-Daily-Planner-App/
