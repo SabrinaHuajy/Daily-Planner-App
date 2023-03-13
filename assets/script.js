@@ -1,11 +1,10 @@
 // Get the current date and time using Moment.js
 var currentDate = moment().format('dddd, MMMM Do YYYY');
-var currentHour = 12 
-// moment().hour();
+var currentHour = moment().hour();
 console.log(currentHour)
 
 // Display the current date and time on the page
-$('#current-date').text(currentDate);
+$('#currentDay').text(currentDate);
 
 // Loop through each row in the calendar and set the background color based on the time
 $('textarea').each(function () {
