@@ -1,46 +1,40 @@
-$(document).ready(function () {
-    // Display the current day and time
-    var currentDate = moment().format('dddd, MMMM Do YYYY');
-    $("#currentDay").text(currentDate);
+// Get the current date and time using Moment.js
+var currentDate = moment().format('dddd, MMMM Do YYYY');
+var currentHour = moment().format('H');
 
-    // Get the current hour in 24-hour format
-    var currentHour = moment().hour();
+// Display the current date and time on the page
+$('#current-date').text(currentDate);
 
-    // Loop through each hour block
-    $(".row").each(function () {
-        var blockHour = parseInt($(this).attr("id"));
+// Loop through each row in the calendar and set the background color based on the time
+$('.row').each(function() {
+  // Get the hour for this row
+  var rowHour = parseInt($(this).find('.hour').text());
+  // Set the background color based on the time
+  if (rowHour < currentHour) {
+    $(this).find('.event-input').addClass('past');
+  } else if (rowHour === currentHour) {
+    $(this).find('.event-input').addClass('present');
+  } else {
+    $(this).find('.event-input').addClass('future');
+  }
+});
 
-        // Check if we've moved past this time
-        if (blockHour < currentHour) {
-            $(this).addClass("past");
-        }
-        // Check if we're currently in this time
-        else if (blockHour === currentHour) {
-            $(this).addClass("present");
-        }
-        // Otherwise, this is a future time
-        else {
-            $(this).addClass("future");
-        }
-    });
+// When the save button is clicked, save the event in local storage
+$('.save-btn').on('click', function() {
+  // Get the hour and event text for this row
+  var hour = $(this).siblings('.hour').text();
+  var eventText = $(this).siblings('.event-input').val();
+  // Save the event in local storage
+  localStorage.setItem(hour, eventText);
+});
 
-    // Save button click listener
-    $(".save-btn").on("click", function () {
-        // Get nearby values
-        var value = $(this).siblings(".event-input").val();
-        var time = $(this).parent().attr("id");
-
-        // Save the value in localStorage as an object
-        localStorage.setItem(time, JSON.stringify({ time: time, value: value }));
-    });
-
-    // Load saved data from localStorage
-    $(".event-input").each(function () {
-        var time = $(this).parent().attr("id");
-        var savedData = JSON.parse(localStorage.getItem(time));
-
-        if (savedData !== null) {
-            $(this).val(savedData.value);
-        }
-    });
+// Load the saved events from local storage and display them on the page
+$('.event-input').each(function() {
+  // Get the hour for this row
+  var hour = $(this).siblings('.hour').text();
+  // Load the event from local storage
+  var eventText = localStorage.getItem(hour);
+  if (eventText !== null) {
+    $(this).val(eventText);
+  }
 });
