@@ -7,7 +7,7 @@ SO THAT I can manage my time effectively
 
 In this App I have leveraged many of the skills I've learned so far, I've thought about DOM manipulation, advanced JavaScript, integration of third-party APIs, and more. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. The Moment.js library was used to work with date and time.
 
-The app:
+This app:
 
 Display the current day at the top of the calendar when a user opens the planner.
 

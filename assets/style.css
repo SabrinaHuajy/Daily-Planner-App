@@ -11,7 +11,7 @@ body {
   border-radius: 10px;
 }
 
-event {
+textarea{
   background: transparent;
   border: none;
   resize: none;
@@ -22,10 +22,10 @@ event {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: lightgoldenrodyellow;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid pink;
 }
 
 .description {
@@ -65,9 +65,9 @@ event {
 }
 
 .save-btn {
-  border: 1px solid black;
+  border: 1px solid lightgreen;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  color: black;
+  color: pink;
   background-color: lightyellow;
 }
