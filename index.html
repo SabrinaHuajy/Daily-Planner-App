@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets\style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../assets/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,58 +22,50 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='9'>9AM</div>
-      <input id="9AM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="09">
+      <div class="col-1 hour">9 am</div>
+      <textarea class="col-9 description" type="text"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='10'>10AM</div>
-      <input id="10AM" class="user-input col-md-10">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="10">
+      <div class="col-1 hour">10 am</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='11'>11AM</div>
-      <input id="11AM" class="user-input col-md-10">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="11">
+      <div class="col-1 hour">11 am</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='12'>12PM</div>
-      <input id="12PM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i id="button" class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="12">
+      <div class="col-1 hour">12 pm</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='13'>1PM</div>
-      <input id="1PM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="13">
+      <div class="col-1 hour">1 pm</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='14'>2PM</div>
-      <input id="2PM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="14">
+      <div class="col-1 hour">2 pm</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='15'>3PM</div>
-      <input id="3PM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="15">
+      <div class="col-1 hour">3 pm</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='16'>4PM</div>
-      <input id="4PM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="16">
+      <div class="col-1 hour">4 pm</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
-
-    <div class="row">
-      <div class="col-md-1 hour pt-4" id='17'>5PM</div>
-      <input id="5PM" class="user-input col-md-10" type="text">
-      <div class="col-md-1 saveBtn pt-4"><i class="fas fa-lock fa-lg pt-2 pl-4"></i></div>
+    <div class="row time-block" id="17">
+      <div class="col-1 hour">5 pm</div>
+      <textarea class="col-9 description"></textarea>
+      <button class="col-2 btn saveBtn bi bi-save"></button>
     </div>
   </div>
 

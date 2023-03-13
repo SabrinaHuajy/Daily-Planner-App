@@ -3,9 +3,19 @@ function currentDate() {
     $('#currentDay').text(currentdate);
 }
 
-var eventinfo = {};
+var tasks = {
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": [],
+    "14": [],
+    "15": [],
+    "16": [],
+    "17": []
+};
 
-var saveButton = $('.saveBtn');
+var saveButton = $('saveBtn');
 
 function handleFormSubmit() {
 
@@ -15,21 +25,21 @@ function handleFormSubmit() {
 
 }
 
-function saveData(locationId, locationData) {
+function savetasks(locationId, locationData) {
     eventinfo[locationId] = locationData;
     localStorage.setItem("events", JSON.stringify(eventinfo));
 }
 
-function loadData() {
+function loadtasks() {
 
     var storedEventData = JSON.parse(localStorage.getItem("events"));
     if (storedEventData !== null) {
         eventinfo = storedEventData;
     }
-    applyEvents();
+    applytasks();
 }
 
-function applyEvents() {
+function applytasks() {
     $('div').each(function () {
         var id = $(this);
         var idValue = $(this).attr('id');
