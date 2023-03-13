@@ -12,8 +12,8 @@ $('textarea').each(function () {
     var rowHour = parseInt($(this).attr("id"));
     console.log(rowHour)
 
-  // Set the background color based on the time
-  if (rowHour < currentHour) {
+    // Set the background color based on the time
+    if (rowHour < currentHour) {
         $(this).addClass('past');
     } else if (rowHour > currentHour) {
         $(this).addClass('future');

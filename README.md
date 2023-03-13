@@ -21,6 +21,10 @@ Save the event in local storage when the save button is clicked in that timebloc
 
 Persist events between refreshes of a page.
 
+
+<br>
+Link to the Daily-Planner-App - https://sabrinahuajy.github.io/SabrinaHuajy-Daily-Planner-App/
+
 The following animation demonstrates the application functionality:
 
 <br>
@@ -28,6 +32,3 @@ The following animation demonstrates the application functionality:
 <img src="assets\images\screenshot1.PNG" alt="screenshot of webpage interface1">
 <img src="assets\images\screenshot2.PNG" alt="screenshot of webpage interface2">
 <img src="assets\images\screenshot3.PNG" alt="screenshot of webpage interface3">
-
-<br>
-Link to the Daily-Planner-App - https://sabrinahuajy.github.io/SabrinaHuajy-Daily-Planner-App/
