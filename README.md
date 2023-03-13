@@ -23,4 +23,11 @@ Persist events between refreshes of a page.
 
 The following animation demonstrates the application functionality:
 
+<br>
+
+<img src="assets\images\screenshot1.PNG" alt="screenshot of webpage interface1">
+<img src="assets\images\screenshot2.PNG" alt="screenshot of webpage interface2">
+<img src="assets\images\screenshot3.PNG" alt="screenshot of webpage interface3">
+
+<br>
 Link to the Daily-Planner-App - https://sabrinahuajy.github.io/SabrinaHuajy-Daily-Planner-App/

@@ -1,6 +1,7 @@
 // Get the current date and time using Moment.js
 var currentDate = moment().format('dddd, MMMM Do YYYY');
-var currentHour = moment().hour();
+var currentHour = 12 
+// moment().hour();
 console.log(currentHour)
 
 // Display the current date and time on the page
