@@ -10,7 +10,7 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -22,65 +22,55 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-    <div class="time row">
-      <div class="hour col-2">9AM</div>
-      <textarea class="textBox col-8" id="9"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">10AM</div>
-      <textarea class="textBox col-8" id="10"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">11AM</div>
-      <textarea class="textBox col-8" id="11"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">12PM</div>
-      <textarea class="textBox col-8" id="12"></textarea>
-      </td>
-      <td><button class="saveBtn col-2">
-          <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">1PM</div>
-      <textarea class="textBox col-8" id="13"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">2PM</div>
-      <textarea class="textBox col-8" id="14"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">3PM</div>
-      <textarea class="textBox col-8" id="15"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">4PM</div>
-      <textarea class="textBox col-8" id="16"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
-    <div class="time row">
-      <div class="hour col-2">5PM</div>
-      <textarea class="textBox col-8" id="17"></textarea>
-      <button class="saveBtn col-2">
-        <i class="far fa-save"></i></button>
-    </div>
+    <div class="row">
+      <div class="col-2 hour">9am</div>
+      <textarea class="col-8 event-input" id="09"></textarea>
+      <button class="col-2 save-btn">Save</button>
   </div>
+  <div class="row">
+      <div class="col-2 hour">10am</div>
+      <textarea class="col-8 event-input" id="10"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">11am</div>
+      <textarea class="col-8 event-input" id="11"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">12pm</div>
+      <textarea class="col-8 event-input" id="12"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">1pm</div>
+      <textarea class="col-8 event-input" id="13"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">2pm</div>
+      <textarea class="col-8 event-input" id="14"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">3pm</div>
+      <textarea class="col-8 event-input" id="15"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">4pm</div>
+      <textarea class="col-8 event-input" id="16"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+  <div class="row">
+      <div class="col-2 hour">5pm</div>
+      <textarea class="col-8 event-input" id="17"></textarea>
+      <button class="col-2 save-btn">Save</button>
+  </div>
+</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
   <script src="./assets/script.js"></script>
 
