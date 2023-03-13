@@ -13,9 +13,9 @@ $('.row').each(function() {
   if (rowHour < currentHour) {
     $(this).find('.event-input').addClass('past');
   } else if (rowHour > currentHour) {
-    $(this).find('.event-input').addClass('present');
-  } else {
     $(this).find('.event-input').addClass('future');
+  } else {
+    $(this).find('.event-input').addClass('present');
   }
 });
 
